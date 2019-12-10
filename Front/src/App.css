@@ -1,0 +1,110 @@
+/*Loading*/
+.sombraLoading {
+    display: none;
+    opacity: 0.5 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    background-color: #000;
+    transition: opacity .15s linear;
+}
+
+.lds-ripple {
+    display: none;
+    /*position: relative;*/
+    width: 64px;
+    height: 64px;
+    z-index: 10050;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+	margin-left: -32px;
+}
+
+    .lds-ripple div {
+        position: absolute;
+        border: 4px solid #fff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .lds-ripple div:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+
+@keyframes lds-ripple {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+/*Loading*/
+
+.campo {
+    /* cursor: not-allowed; */
+    background-color: #eceeef;
+    opacity: 1;
+    box-shadow: none!important;
+
+    width: 100%;
+    min-height: 31px;
+    padding: 4px 12px;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+
+    font-size: 13px;
+    line-height: 1.61539;
+    color: #444;
+    display: block;
+
+    background-image: none;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    margin: 0;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.labelTooltip{
+    color: #35aba1;
+}
+
+textarea{
+    resize: none !important;
+}
+body{
+    font-family: tahoma, arial, helvetica, sans-serif;
+}
+
+/* 
+.px-nav {
+    z-index: 1035 !important;
+}
+
+.px-nav-dimmer, .px-nav-toggle {
+    z-index: 1034 !important;
+} */
